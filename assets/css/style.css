@@ -81,7 +81,7 @@ body {
 /* Cards */
 
 .card-custom-header {
-    color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 .card-image-custom {
@@ -89,10 +89,11 @@ body {
 }
 
 .card-background {
-    background-color: rgba(46, 229, 160, 0.52);
+    background-color: rgba(101, 115, 126, 0.13);
     color: var(--color-text);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    border: 1px solid var(--color-secondary);
 }
 /* footer */
 
