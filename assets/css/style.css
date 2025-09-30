@@ -1,0 +1,106 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Patrick+Hand&display=swap");
+
+/* Colour palette
+Background colour #1E1E2E (deep indigo, not pure black → softer) 
+Primary Accent: #2EE5A0 (minty green, fresh/optimistic) 
+Secondary Accent: #F72585 (bright magenta, energetic) 
+Highlight / Callout: #FFB703 (warm golden yellow for positivity) 
+Neutral Contrast: #F5F5F5 (light grey/white for text) */
+
+/* root styles */
+:root {
+    --font-primary: "Kalam", cursive;
+    --font-secondary: "Patrick Hand", cursive;
+    --color-background: #1e1e2e;
+    --color-primary: #2ee5a0;
+    --color-secondary: #f72585;
+    --color-text: #f5f5f5;
+    --color-highlight: #ffb703;
+}
+
+/* Global styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-secondary);
+}
+
+/* Hero section */
+#hero {
+    background: url("../images/hero-neon-mint.png") no-repeat top center/cover;
+
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    text-align: center;
+    padding-top: 50px;
+    height: 600px;
+}
+
+.navbar-custom {
+    background-color: var(--color-background);
+}
+
+#hero h1 {
+    color: var(--color-primary);
+}
+
+#hero p {
+    color: var(--color-text);
+}
+
+#jumbo {
+    background-color: rgba(10, 10, 10, 0.6);
+    background-blend-mode: darken;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    border-radius: 4px;
+}
+
+/* Buttons */
+.btn-custom {
+    color: var(--color-secondary);
+    outline-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+.btn-custom:hover {
+    color: var(--color-text);
+    background-color: var(--color-secondary);
+}
+
+/* Cards */
+
+.card-custom-header {
+    color: var(--color-secondary);
+}
+
+.card-image-custom {
+    max-height: 180px;
+}
+
+.card-background {
+    background-color: rgba(46, 229, 160, 0.52);
+    color: var(--color-text);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+/* footer */
+
+#follow-us {
+    font-size: 1rem;
+}
+
+#footer {
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
