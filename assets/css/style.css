@@ -37,6 +37,27 @@ body {
     font-family: var(--font-secondary);
 }
 
+/* Background colours */
+
+.bg-c1 {
+    background-color: #2c0730;
+}
+
+/* navbar */
+.navbar .nav-link {
+    color: #2ee59f7e;
+}
+.navbar .nav-link.active {
+    color: #f72585;
+    font-weight: bold;
+}
+.navbar .nav-link.active:hover {
+    color: #f72585;
+    font-weight: bold;
+}
+.navbar .nav-link:hover {
+    color: #2ee5a0;
+}
 /* Hero section */
 #hero {
     background: url("../images/hero-neon-mint.png") no-repeat top center/cover;
@@ -48,8 +69,8 @@ body {
     height: 600px;
 }
 
-.navbar-custom {
-    background-color: var(--color-background);
+#navbar {
+    background-color: #151520;
 }
 
 #hero h1 {
@@ -78,6 +99,16 @@ body {
     background-color: var(--color-secondary);
 }
 
+/* Iframes */
+.iframe-custom {
+    border: 2px solid var(--color-secondary);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    justify-self: center;
+    padding: 1px;
+    margin: 1px;
+}
+
 /* Cards */
 
 .card-custom-header {
@@ -103,5 +134,5 @@ body {
 
 #footer {
     color: var(--color-text);
-    background-color: var(--color-background);
+    background-color: #151520;
 }
