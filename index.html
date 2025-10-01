@@ -19,23 +19,53 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
+    <div class="modal" tabindex="-1" id="formModal" data-bs-theme="dark">
+        <div class="modal-dialog modal-custom">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Newsletter Signup</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                    <form action="POST">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name" class="form-control my-2" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="Email" class="form-control my-2"
+                            required>
+                        <input type="checkbox" name="consent" id="consent" class="form-check-input my-2" required>
+                        <label for="consent" class="form-check-label">I consent to receiving marketing
+                            communications.</label>
 
+                        </p>
+                </div>
+                <div class="modal-footer">
+
+                    <input type="submit" value="Submit" class="btn btn-custom-primary my-2">
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg sticky-top bg-dark" data-bs-theme="dark">
+    <nav id="navbar" class="navbar navbar-expand-lg sticky-top bg-c1 shadow" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand  txt-primary ms-4 p-1" href="#"><img src="assets/favicon/favicon-32x32.png" alt=""
+                    class="pe-1 me-1">Prevent
+                Strategy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse navbar-custom" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#signs">Link</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -69,7 +99,13 @@
                     <hr class="my-4">
                     <p>Concerned about someone you know?</p>
                     <p>
-                        <button type="button" class="btn btn-outline btn-custom">Report a concern</button>
+                        <button type="button" class="btn btn-outline btn-custom-primary" data-bs-toggle="modal"
+                            data-bs-target="#formModal">
+                            Signup to our newsletter
+                        </button>
+
+                        <button type="button" class="btn btn-lg btn-outline btn-custom-secondary">Report a
+                            concern</button>
                     </p>
                 </div>
             </div>
@@ -78,29 +114,43 @@
 
     <!-- Main Content -->
     <main>
-        <section>
+        <section id="about">
             <div class="container d-flex justify-content-center">
                 <div class="row">
-                    <div class="col-12">
-                        <h2 class="section-title display-6 text-center mt-2">About Prevent Strategy</h2>
+                    <div class="col-12 mt-2">
+                        <h2 class="section-title display-6 text-center mt-2">What is the prevent strategy?</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis quasi facilis culpa odio
                             qui
                             voluptatibus, rerum necessitatibus aspernatur quia repellendus ipsam dolorem sequi, unde
                             officia
                             quam quaerat hic reiciendis temporibus.</p>
                     </div>
+                    <div class="col-12 iframe-container">
+
+                        <iframe class="iframe-custom responsive-iframe" width="90%" height="500"
+                            src="https://www.youtube.com/embed/Otc2eaRY32s" title="Prevent: An Introduction"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+
                 </div>
             </div>
         </section>
-
         <section id="signs">
-            <div class="container text-center d-flex justify-content-center">
-                <div class="row ">
+            <div class="container d-flex ">
+                <div class="row text-center justify-content-center">
                     <div class="col-12">
-                        <h2 class="display-6 section-title">Signs of radicalization</h2>
+                        <h2 class="display-6 section-title my-4">Signs of radicalization</h2>
                     </div>
                     <div class="col-12 col-lg-6 col-xl-2 box-shadow">
-                        <div class="card mb-3 background card-background" style="max-width: 540px;">
+                        <div class="card mb-3 background card-background">
                             <div class="row g-0">
                                 <div class="col-4 col-xl-12">
                                     <img src="assets/images/signs-access.png"
@@ -121,7 +171,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 col-xl-2">
-                        <div class="card mb-3 background card-background" style="max-width: 540px;">
+                        <div class="card mb-3 background card-background">
                             <div class="row g-0">
                                 <div class="col-4 col-xl-12">
                                     <img src="assets/images/signs-violence.png"
@@ -142,7 +192,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 col-xl-2">
-                        <div class="card mb-3 background card-background" style="max-width: 540px;">
+                        <div class="card mb-3 background card-background">
                             <div class="row g-0">
                                 <div class="col-4 col-xl-12">
                                     <img src="assets/images/signs-clothes.png"
@@ -163,7 +213,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 col-xl-2">
-                        <div class="card mb-3 background card-background" style="max-width: 540px;">
+                        <div class="card mb-3 background card-background">
                             <div class="row g-0">
                                 <div class="col-4 col-xl-12">
                                     <img src="assets/images/signs-people.png"
@@ -184,7 +234,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 col-xl-2">
-                        <div class="card mb-3 background card-background" style="max-width: 540px;">
+                        <div class="card mb-3 background card-background">
                             <div class="row g-0">
                                 <div class="col-4 col-xl-12">
                                     <img src="assets/images/signs-peers.png"
@@ -205,7 +255,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 col-xl-2">
-                        <div class="card mb-3 background card-background" style="max-width: 540px;">
+                        <div class="card mb-3 background card-background">
                             <div class="row g-0">
                                 <div class="col-4 col-xl-12">
                                     <img src="assets/images/signs-symbols.png"
@@ -228,7 +278,152 @@
                 </div>
             </div>
         </section>
+        <section id="concerns">
+            <div class="container">
+                <div class="row text-center justify-content-center">
+                    <div class="col-12">
+                        <h2 class="display-6 section-title my-4">Types of extremism</h2>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-2 box-shadow">
+                        <div class="card mb-3 background card-background">
+                            <div class="row g-0">
+                                <div class="col-4 col-xl-12">
+                                    <img src="assets/images/right-wing.png"
+                                        class="img-fluid rounded-start align-middle card-image-custom p-1" alt="...">
+                                </div>
+                                <div class="col-8 col-xl-12">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-custom-header">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                ago</small></p>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-2">
+                        <div class="card mb-3 background card-background">
+                            <div class="row g-0">
+                                <div class="col-4 col-xl-12">
+                                    <img src="assets/images/islamist2.png"
+                                        class="img-fluid rounded-start align-middle card-image-custom p-1" alt="...">
+                                </div>
+                                <div class="col-8 col-xl-12">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-custom-header">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                ago</small></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-2">
+                        <div class="card mb-3 background card-background">
+                            <div class="row g-0">
+                                <div class="col-4 col-xl-12">
+                                    <img src="assets/images/no-ideology.png"
+                                        class="img-fluid rounded-start align-middle card-image-custom p-1" alt="...">
+                                </div>
+                                <div class="col-8 col-xl-12">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-custom-header">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                ago</small></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-2">
+                        <div class="card mb-3 background card-background">
+                            <div class="row g-0">
+                                <div class="col-4 col-xl-12">
+                                    <img src="assets/images/school-massacre.png"
+                                        class="img-fluid rounded-start align-middle card-image-custom p-1" alt="...">
+                                </div>
+                                <div class="col-8 col-xl-12">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-custom-header">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                ago</small></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-2">
+                        <div class="card mb-3 background card-background">
+                            <div class="row g-0">
+                                <div class="col-4 col-xl-12">
+                                    <img src="assets/images/incel.png"
+                                        class="img-fluid rounded-start align-middle card-image-custom p-1" alt="...">
+                                </div>
+                                <div class="col-8 col-xl-12">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-custom-header">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                ago</small></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="report">
+            <div class="container d-flex justify-content-center">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h2 class="display-6 section-title my-4">Reporting concerns</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum eos doloremque
+                            numquam excepturi repudiandae non delectus vero nulla, fuga quidem. Repudiandae voluptatum,
+                            non sed voluptatibus ipsa deserunt temporibus provident magni veritatis quibusdam officiis,
+                            consequuntur quia sequi cupiditate dicta ut. Accusantium nemo sed quis, molestiae ducimus
+                            tempore at fuga exercitationem eum unde, nostrum tenetur tempora quae aliquid quo debitis
+                            ullam sapiente maxime iure, minima deleniti nihil accusamus. Debitis, quis fugiat. Odit ipsa
+                            soluta autem quidem voluptas quisquam natus, quaerat modi quasi, optio hic nulla ipsum dolor
+                            excepturi asperiores architecto tempora. Corrupti, autem repudiandae provident totam
+                            pariatur molestias quo debitis sapiente ducimus iste accusantium, obcaecati numquam, nam
+                            nulla quae! Sunt debitis maxime odio fuga nam, at beatae voluptate repellat ullam optio
+                            consequatur inventore, quam deleniti, dolor modi nulla accusamus fugit voluptas? Ipsam
+                            cupiditate id maiores fugit deserunt nemo animi, officiis nostrum iusto atque. Est, magnam!
+                            Quia ex minima mollitia expedita eaque, adipisci natus aut ducimus incidunt animi aperiam
+                            harum reiciendis vero, tempora magni in sed veritatis quidem illum! Quam, ipsum rem sed
+                            dolores a similique ullam quos labore? Placeat quisquam corporis magnam animi magni vero
+                            pariatur dignissimos vel dolores reprehenderit? Ducimus eveniet ad asperiores dolore illo
+                            maxime unde iste esse perspiciatis, exercitationem explicabo molestiae id libero voluptate
+                            sequi sit. Dicta eum non assumenda aspernatur velit possimus deleniti suscipit, numquam sed
+                            voluptate reiciendis perferendis cum soluta fugiat placeat atque ex ea ipsam sunt doloremque
+                            rem? Eveniet accusantium, voluptates quaerat illum veritatis esse vitae repellat sint a
+                            minus eos architecto. Illo, aspernatur rem.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
     </div>
     </div>
@@ -238,21 +433,25 @@
 
 
     <!-- Footer -->
-    <footer id="footer" class="mt-auto bg-dark text-white" data-bs-theme="dark">
-        <div class="container">
-            <div class="row">
+    <footer id="footer" class="mt-auto bg-c1" data-bs-theme="dark">
+        <div class="container ">
+            <div class="row align-items-end">
                 <div class="col-6">
                     <p>&copy; 2023 Your Company. All rights reserved.</p>
                 </div>
                 <div class="col-6" id="follow-us">
-                    <ul class="list-inline text-end">
+                    <ul class="list-inline text-end me-2">
                         <li class="inlineitem">
                             Follow us
                         </li>
-                        <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank"
+                        <li id="social" class="list-inline-item"><a href="https://www.facebook.com" target="_blank"
                                 rel="noopener"><i class="fa-brands fa-square-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#">Terms of Service</a></li>
-                        <li class="list-inline-item"><a href="#">Contact Us</a></li>
+                        <li class="list-inline-item"><a href="https://www.twitter.com" target="_blank" rel="noopener"><i
+                                    class="fa-brands fa-square-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank"
+                                rel="noopener"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com" target="_blank"
+                                rel="noopener"><i class="fa-brands fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -268,6 +467,29 @@
 
     <!-- Fontawesome JS -->
     <script src="https://kit.fontawesome.com/0a349cffc6.js" crossorigin="anonymous"></script>
+
+
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+    <script>
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let section = document.querySelector(e.target.getAttribute("href"));
+                    if (section) {
+                        e.preventDefault(); // Prevent default anchor click behavior
+                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        window.scroll({
+                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            behavior: "smooth",
+                        });
+                        document
+                            .querySelector(".navbar-collapse")
+                            .classList.remove("show"); // Collapse navbar
+                    }
+                });
+            });
+    </script>
 </body>
 
 </html>
