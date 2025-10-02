@@ -36,7 +36,7 @@ h6 {
 body {
     background-color: var(--color-background);
     color: var(--color-text);
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
 }
 
 /* Modal styles */
@@ -103,6 +103,11 @@ input[type="checkbox"]:checked {
     color: var(--color-primary);
 }
 /* navbar */
+.navbar {
+    border-bottom: 1px solid var(--color-secondary);
+    box-shadow: 1px 2px 5px rgba(255, 75, 255, 0.7);
+    font: var(--font-secondary);
+}
 .navbar .nav-link {
     color: #2ee59f7e;
 }
@@ -117,10 +122,13 @@ input[type="checkbox"]:checked {
 .navbar .nav-link:hover {
     color: #2ee5a0;
 }
+.navbar-brand:hover {
+    color: var(--color-secondary);
+}
 /* Hero section */
 #hero {
     background: url("../images/hero-neon-mint.webp") no-repeat top center/cover;
-
+    border-bottom: 1px solid var(--color-secondary);
     color: var(--color-text);
     font-family: var(--font-primary);
     text-align: center;
@@ -312,6 +320,7 @@ li a:hover {
 #footer {
     color: var(--color-primary);
     background-color: #151520;
+    border-top: 1px solid var(--color-secondary);
 }
 
 .socials {
