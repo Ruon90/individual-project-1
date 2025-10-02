@@ -56,7 +56,7 @@
     </div>
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg sticky-top bg-c1 shadow" data-bs-theme="dark">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand  txt-primary ms-4 p-1" href="index.html"><img src="assets/favicon/favicon-32x32.png"
                     alt="Prevent Strategy logo, links to index.html." class="pe-1 me-1">Prevent
                 Strategy</a>
@@ -71,13 +71,16 @@
                         <a class="nav-link" href="index.html" aria-label="Link to home page">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#signs" aria-label="Link to signs of extremism on home page">Signs</a>
+                        <a class="nav-link" href="index.html#signs"
+                            aria-label="Link to signs of extremism on home page">Signs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#types" aria-label="Link to types of extremism section">Types</a>
+                        <a class="nav-link" href="index.html#types"
+                            aria-label="Link to types of extremism section">Types</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#report" aria-label="Link to reporting concerns section">Report</a>
+                        <a class="nav-link" href="index.html#report"
+                            aria-label="Link to reporting concerns section">Report</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="further-info.html" aria-current="page"
@@ -96,24 +99,26 @@
     <!-- Hero Section -->
     <section id="hero"
         aria-label="Hero section with information about Prevent Strategy and a background image of three teenagers stood against a heavily graffitied wall with the word 'Prevent' spray painted on it in bright pink.">
-        <div class="row hero p-4">
-            <div class="col-9 col-lg-6 d-flex align-items-center ms-lg-5 ms-xl-8">
-                <div id="jumbo" class="jumbotron">
-                    <h1 class="display-4">Prevent Strategy</h1>
-                    <p class="lead p-2">Safeguarding young people from radicalization and extremism.</p>
-                    <hr class="my-4">
-                    <p>Concerned about someone you know?</p>
-                    <p>
-                        <button type="button" class="btn btn-outline btn-custom-primary  m-1" data-bs-toggle="modal"
-                            data-bs-target="#formModal">
-                            Signup to our newsletter
-                        </button>
+        <div class="container-fluid">
+            <div class="row hero p-4">
+                <div class="col-9 col-lg-6 d-flex align-items-center me-auto">
+                    <div id="jumbo" class="jumbotron">
+                        <h1 class="display-4">Prevent Strategy</h1>
+                        <p class="lead p-2">Safeguarding young people from radicalization and extremism.</p>
+                        <hr class="my-4">
+                        <p>Concerned about someone you know?</p>
+                        <p>
+                            <button type="button" class="btn btn-outline btn-custom-primary  m-1" data-bs-toggle="modal"
+                                data-bs-target="#formModal">
+                                Signup to our newsletter
+                            </button>
 
-                        <a href="https://actearly.uk/contact/" target="_blank" aria-label="Report a concern"><button
-                                type="button"
-                                class="btn btn-lg btn-outline btn-custom-secondary m-1 mt-3 mt-sm-1">Report a
-                                concern</button></a>
-                    </p>
+                            <a href="https://actearly.uk/contact/" target="_blank" aria-label="Report a concern"><button
+                                    type="button"
+                                    class="btn btn-lg btn-outline btn-custom-secondary m-1 mt-3 mt-sm-1">Report a
+                                    concern</button></a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -266,6 +271,41 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    What is Channel?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    If a referral progresses and it is assessed that there is a genuine risk of
+                                    radicalisation, the case is considered by a multi-agency 'Channel panel' of
+                                    professionals who collectively assess the case and decide on a tailored package of
+                                    support that can be offered to the person.
+                                    <br><br>
+                                    The Channel panel is chaired by the local authority and can include a variety of
+                                    partners such as the police, children's services, social services, education
+                                    professionals and mental health care professionals.
+                                    <br><br>
+                                    What kind of support is offered via Channel?
+                                    <br>
+                                    If a Channel intervention is required, a tailored support package will be offered.
+                                    This could include mentoring, theological guidance, education, and careers
+                                    assistance to those assessed as being at risk of radicalisation and requiring
+                                    support. This is known as Channel in England and Wales, and Prevent Multi-Agency
+                                    Panels (PMAP) in Scotland.
+                                    <br><br>
+                                    Channel is voluntary and people who are referred to Prevent must give consent (via a
+                                    parent or guardian if they are underage) before they can be given support.
+                                    <br><br>
+                                    If a person does not engage with Channel or decides not to continue with the process
+                                    for any reason, alternative forms of support may be available from the local
+                                    authority or other providers. Any risks are then carefully managed by the police.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -274,36 +314,42 @@
         <section id="links">
             <div class="container">
                 <div class="row text-center">
-                    <div class="col">
-                        <h3 class="section-title display-12 text-center my-4 ">Useful Links</h3>
-                        <p><a class="hyperlink m-3"
+                    <div class="col-12">
+                        <h3 class="section-title display-5 text-center">Useful Links</h3>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2">
+                        <p><a class="hyperlink p-lg-1"
                                 href="https://www.gov.uk/government/publications/prevent-duty-guidance" target="_blank"
                                 aria-label="Prevent Duty Guidance (Opens in a new window)">Prevent
                                 Duty Guidance</a>
-                            <a class="hyperlink m-3" href="https://www.elearning.prevent.homeoffice.gov.uk/"
-                                target="_blank" aria-label="Prevent training (Opens in a new window)">Prevent
-                                Training</a>
-                            <a class="hyperlink m-3" href="https://www.actearly.uk/contact/" target="_blank"
-                                aria-label="Report a concern (Opens in a new window)">Report a Concern</a>
-
-                            <a class="hyperlink m-3"
-                                href="https://www.gov.uk/government/publications/contest-the-uk-governments-counter-terrorism-strategy"
-                                target="_blank" aria-label="CONTEST Strategy (Opens in a new window)">CONTEST
-                                Strategy</a>
-                            <a class="hyperlink m-3"
-                                href="https://www.gov.uk/government/publications/defending-democracy-taskforce"
-                                target="_blank"
-                                aria-label="Defending Democracy Taskforce (Opens in a new window)">Defending
-                                Democracy Taskforce</a>
-                            <a class="hyperlink m-3"
-                                href="https://assets.publishing.service.gov.uk/media/650b1b8d52e73c000d54dc82/CONTEST_2023_English_updated.pdf"
-                                target="_blank"
-                                aria-label="Defending Democracy Taskforce (Opens in a new window)">Referral form</a>
-
-                        </p>
-
                     </div>
+                    <div class="col-12 col-md-6 col-lg-2">
+                        <a class="hyperlink" href="https://www.elearning.prevent.homeoffice.gov.uk/" target="_blank"
+                            aria-label="Prevent training (Opens in a new window)">Prevent
+                            Training</a>
+                    </div>
+                    <div class="col-12 col-md-6 mt-lg-1 col-lg-2"><a class="hyperlink"
+                            href="https://www.actearly.uk/contact/" target="_blank"
+                            aria-label="Report a concern (Opens in a new window)">Report a Concern</a>
+                    </div>
+                    <div class="col-12 col-md-6 mt-lg-1 mb-lg-1 col-lg-2"> <a class="hyperlink"
+                            href="https://www.gov.uk/government/publications/contest-the-uk-governments-counter-terrorism-strategy"
+                            target="_blank" aria-label="CONTEST Strategy (Opens in a new window)">CONTEST
+                            Strategy</a></div>
+
+                    <div class="col-12 col-md-6 mt-lg-1 col-lg-2"><a class="hyperlink"
+                            href="https://www.gov.uk/government/publications/defending-democracy-taskforce"
+                            target="_blank" aria-label="Defending Democracy Taskforce (Opens in a new window)">Defending
+                            Democracy Taskforce</a></div>
+                    <div class="col-12 col-md-6 mt-lg-1 col-lg-2"><a class="hyperlink"
+                            href="https://assets.publishing.service.gov.uk/media/650b1b8d52e73c000d54dc82/CONTEST_2023_English_updated.pdf"
+                            target="_blank" aria-label="Defending Democracy Taskforce (Opens in a new window)">Referral
+                            form</a></div>
+
+                    </p>
+
                 </div>
+            </div>
 
             </div>
         </section>
