@@ -24,6 +24,35 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
+    <div class="modal" tabindex="-1" id="formModal" data-bs-theme="dark">
+        <div class="modal-dialog modal-custom">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Newsletter Signup</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                    <form action="success.html" method="GET">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name" class="form-control my-2" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="Email" class="form-control my-2"
+                            required>
+                        <input type="checkbox" name="consent" id="consent" class="form-check-input my-2" required>
+                        <label for="consent" class="form-check-label">I consent to receiving marketing
+                            communications.</label>
+
+                        </p>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" value="Close" class="btn btn-custom-secondary my-2" data-bs-dismiss="modal">
+                    <input type="submit" value="Submit" class="btn btn-custom-primary my-2">
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg sticky-top bg-c1 shadow" data-bs-theme="dark">
         <div class="container-fluid">
@@ -68,17 +97,16 @@
                     <hr class="my-4">
                     <p>Concerned about someone you know?</p>
                     <p>
-                        <button type="button" class="btn btn-outline btn-custom-primary me-1" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-outline btn-custom-primary m-1" data-bs-toggle="modal"
                             data-bs-target="#formModal">
                             Signup to our newsletter
                         </button>
 
-                        <button type="button" class="btn btn-lg btn-outline btn-custom-secondary ms-1">Report a
-                            concern</button>
-                    </p>
+                        <a href="https://actearly.uk/contact/" target="_blank" aria-details="Report a concern"><button
+                                type="button" class="btn btn-lg btn-outline btn-custom-secondary m-1">Report a
+                                concern</button></a>
                 </div>
             </div>
-        </div>
     </section>
 
     <main>
