@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Patrick+Hand&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" defer>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -69,22 +69,25 @@
             <div class="collapse navbar-collapse navbar-custom" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+                        <a class="nav-link active" href="index.html" aria-current="page"
+                            aria-label="Link to home page">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#signs">Signs</a>
+                        <a class="nav-link" href="#signs" aria-label="Link to signs of extremism on home page">Signs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#types">Types</a>
+                        <a class="nav-link" href="#types" aria-label="Link to types of extremism section">Types</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#report">Report</a>
+                        <a class="nav-link" href="#report" aria-label="Link to reporting concerns section">Report</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="further-info.html">Further info</a>
+                        <a class="nav-link" href="further-info.html"
+                            aria-label="Link to further information page">Further info</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="further-info.html#links">links</a>
+                        <a class="nav-link" href="further-info.html#links"
+                            aria-label="Link to useful links section on further information page">links</a>
                     </li>
 
                 </ul>
@@ -107,7 +110,7 @@
                             Signup to our newsletter
                         </button>
 
-                        <a href="https://actearly.uk/contact/" target="_blank" aria-details="Report a concern"><button
+                        <a href="https://actearly.uk/contact/" target="_blank" aria-label="Report a concern"><button
                                 type="button" class="btn btn-lg btn-outline btn-custom-secondary m-1">Report a
                                 concern</button></a>
                     </p>
@@ -140,7 +143,8 @@
 
 
                     <div class="col-12 iframe-container">
-                        <div class="youtube-player iframe-custom" data-id="Otc2eaRY32s"></div>
+                        <div class="youtube-player iframe-custom" data-id="Otc2eaRY32s">
+                        </div>
 
                     </div>
                 </div>
@@ -420,8 +424,9 @@
                             exploited.</p>
                         <p>It's important to remember that you are not alone in this. There are professionals who can
                             help click the button below to go to EACT and report a concern directly.</p>
-                        <a href="https://actearly.uk/contact/" target="_blank" aria-details="Report a concern"><button
-                                type="button" class="btn btn-lg btn-outline btn-custom-primary m-1">Report a
+                        <a href="https://actearly.uk/contact/" target="_blank"
+                            aria-label="Report a concern to ACT early (opens in a new tab)"><button type="button"
+                                class="btn btn-lg btn-outline btn-custom-primary m-1">Report a
                                 concern</button></a>
                     </div>
 
@@ -446,13 +451,17 @@
                             Follow us
                         </li>
                         <li id="social" class="list-inline-item socials"><a href="https://www.facebook.com"
-                                target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a></li>
+                                target="_blank" rel="noopener" aria-label="Link to Facebook profile"><i
+                                    class="fa-brands fa-square-facebook"></i></a></li>
                         <li class="list-inline-item socials"><a href="https://www.twitter.com" target="_blank"
-                                rel="noopener"><i class="fa-brands fa-square-twitter"></i></a></li>
+                                rel="noopener" aria-label="Link to Twitter profile"><i
+                                    class="fa-brands fa-square-twitter"></i></a></li>
                         <li class="list-inline-item socials"><a href="https://www.instagram.com" target="_blank"
-                                rel="noopener"><i class="fa-brands fa-square-instagram"></i></a></li>
+                                rel="noopener" aria-label="Link to Instagram profile"><i
+                                    class="fa-brands fa-square-instagram"></i></a></li>
                         <li class="list-inline-item socials"><a href="https://www.linkedin.com" target="_blank"
-                                rel="noopener"><i class="fa-brands fa-linkedin"></i></a></li>
+                                rel="noopener" aria-label="Link to LinkedIn profile"><i
+                                    class="fa-brands fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>

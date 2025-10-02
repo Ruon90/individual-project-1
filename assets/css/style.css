@@ -278,6 +278,7 @@ input[type="checkbox"]:checked {
     margin-top: -24px;
     position: absolute;
     background: url("https://i.ibb.co/j3jcJKv/yt.png") no-repeat;
+
     cursor: pointer;
 }
 /* Cards */
@@ -311,6 +312,7 @@ input[type="checkbox"]:checked {
     justify-self: center;
 }
 /* Media Queries */
+
 @media (min-width: 992px) {
     .card-height {
         height: 180px;
