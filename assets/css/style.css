@@ -310,6 +310,19 @@ input[type="checkbox"]:checked {
     max-width: 540px;
     justify-self: center;
 }
+/* Media Queries */
+@media (min-width: 992px) {
+    .card-height {
+        height: 180px;
+    }
+    /* … */
+}
+@media (min-width: 1200px) {
+    .card-height {
+        height: 430px;
+    }
+    /* … */
+}
 
 /* footer */
 
