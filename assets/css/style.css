@@ -39,6 +39,14 @@ body {
     font-family: var(--font-primary);
 }
 
+.hyperlink {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+.hyperlink:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
 /* Modal styles */
 .modal-custom {
     background-color: var(--color-background);
