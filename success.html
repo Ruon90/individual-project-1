@@ -16,14 +16,48 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
+    <div class="modal" tabindex="-1" id="formModal" data-bs-theme="dark">
+        <div class="modal-dialog modal-custom">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Newsletter Signup</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                    <form action="POST" target="success.html">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name" class="form-control my-2" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="Email" class="form-control my-2"
+                            required>
+                        <input type="checkbox" name="consent" id="consent" class="form-check-input my-2" required>
+                        <label for="consent" class="form-check-label">I consent to receiving marketing
+                            communications.</label>
+
+                        </p>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" value="Close" class="btn btn-custom-secondary my-2" data-bs-dismiss="modal">
+                    <input type="submit" value="Submit" class="btn btn-custom-primary my-2">
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg sticky-top bg-c1 shadow" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand  txt-primary ms-4 p-1" href="#"><img src="assets/favicon/favicon-32x32.png" alt=""
-                    class="pe-1 me-1">Prevent
+            <a class="navbar-brand  txt-primary ms-4 p-1" href="index.html"><img src="assets/favicon/favicon-32x32.png"
+                    alt="" class="pe-1 me-1">Prevent
                 Strategy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -33,56 +67,28 @@
             <div class="collapse navbar-collapse navbar-custom" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#signs">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <a class="nav-link" href="#signs">Signs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#types">Types</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#report">Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="further-info.html">Further info</a>
+                    </li>
+
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <!-- <section id="hero" class="">
-        <div class="row hero p-4">
-            <div class="col-9 col-md-6 d-flex align-items-center">
-                <div id="jumbo" class="jumbotron">
-                    <h1 class="display-4">Prevent Strategy</h1>
-                    <p class="lead p-2">Safeguarding young people from radicalization and extremism.</p>
-                    <hr class="my-4">
-                    <p>Concerned about someone you know?</p>
-                    <p>
-                        <button type="button" class="btn btn-outline btn-custom-primary me-1" data-bs-toggle="modal"
-                            data-bs-target="#formModal">
-                            Signup to our newsletter
-                        </button>
 
-                        <button type="button" class="btn btn-lg btn-outline btn-custom-secondary ms-1">Report a
-                            concern</button>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
+    <!-- Main Content -->
     <main>
         <div class="container text-center my-3">
             <div class="row">
@@ -95,69 +101,67 @@
                 </div>
             </div>
         </div>
-    </main>
 
 
 
 
-    <!-- Footer -->
-    <footer id="footer" class="mt-auto bg-c1" data-bs-theme="dark">
-        <div class="container ">
-            <div class="row align-items-end">
-                <div class="col-6">
-                    <p>&copy; 2023 Your Company. All rights reserved.</p>
-                </div>
-                <div class="col-6" id="follow-us">
-                    <ul class="list-inline text-end me-2">
-                        <li class="inlineitem">
-                            Follow us
-                        </li>
-                        <li id="social" class="list-inline-item"><a href="https://www.facebook.com" target="_blank"
-                                rel="noopener"><i class="fa-brands fa-square-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.twitter.com" target="_blank" rel="noopener"><i
-                                    class="fa-brands fa-square-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank"
-                                rel="noopener"><i class="fa-brands fa-square-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.linkedin.com" target="_blank"
-                                rel="noopener"><i class="fa-brands fa-linkedin"></i></a></li>
-                    </ul>
+        <!-- Footer -->
+        <footer id="footer" class="bg-c1 fixed-bottom" data-bs-theme="dark">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-6">
+                        <p>&copy; 2025 MyDesign. All rights reserved.</p>
+                    </div>
+                    <div class="col-6" id="follow-us">
+                        <ul class="list-inline text-end me-2 pt-1">
+                            <li class="inlineitem">
+                                Follow us
+                            </li>
+                            <li id="social" class="list-inline-item socials"><a href="https://www.facebook.com"
+                                    target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a></li>
+                            <li class="list-inline-item socials"><a href="https://www.twitter.com" target="_blank"
+                                    rel="noopener"><i class="fa-brands fa-square-twitter"></i></a></li>
+                            <li class="list-inline-item socials"><a href="https://www.instagram.com" target="_blank"
+                                    rel="noopener"><i class="fa-brands fa-square-instagram"></i></a></li>
+                            <li class="list-inline-item socials"><a href="https://www.linkedin.com" target="_blank"
+                                    rel="noopener"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
 
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
+            defer></script>
 
-    <!-- Fontawesome JS -->
-    <script src="https://kit.fontawesome.com/0a349cffc6.js" crossorigin="anonymous"></script>
+        <!-- Fontawesome JS -->
+        <script src="https://kit.fontawesome.com/0a349cffc6.js" crossorigin="anonymous"></script>
 
-
-    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
-    <script>
-        document
-            .querySelectorAll(".navbar-collapse .nav-link")
-            .forEach((link) => {
-                link.addEventListener("click", function (e) {
-                    let section = document.querySelector(e.target.getAttribute("href"));
-                    if (section) {
-                        e.preventDefault(); // Prevent default anchor click behavior
-                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
-                        window.scroll({
-                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
-                            behavior: "smooth",
-                        });
-                        document
-                            .querySelector(".navbar-collapse")
-                            .classList.remove("show"); // Collapse navbar
-                    }
+        <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+        <script>
+            document
+                .querySelectorAll(".navbar-collapse .nav-link")
+                .forEach((link) => {
+                    link.addEventListener("click", function (e) {
+                        let section = document.querySelector(e.target.getAttribute("href"));
+                        if (section) {
+                            e.preventDefault(); // Prevent default anchor click behavior
+                            let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                            window.scroll({
+                                top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                                behavior: "smooth",
+                            });
+                            document
+                                .querySelector(".navbar-collapse")
+                                .classList.remove("show"); // Collapse navbar
+                        }
+                    });
                 });
-            });
-    </script>
+        </script>
 </body>
 
 </html>
