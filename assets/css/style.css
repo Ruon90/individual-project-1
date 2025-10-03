@@ -291,6 +291,22 @@ input[type="checkbox"]:checked {
     max-height: 180px;
 }
 
+.card-link-custom {
+    color: var(--color-primary);
+}
+.card-link-custom:hover {
+    color: var(--color-primary);
+}
+#links .card-link {
+    box-shadow: none;
+    color: var(--color-text);
+    border-color: var(--color-primary-highlight);
+}
+#links .card-link h5 {
+    box-shadow: none;
+    color: var(--color-primary);
+    border-color: var(--color-primary-highlight);
+}
 .card {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
         border-color 0.2s ease-in;
