@@ -22,14 +22,18 @@ I opted to do the prevent strategy website as I thought it would be more of a ch
 -   [Project Planning](#project-planning)
     -   [UX Design](#ux-design)
         -   [User Stories](#user-stories)
-        -   [Colors](#colors)
+        -   [Colours](#colours)
         -   [Fonts](#fonts)
         -   [Imagery](#imagery)
         -   [Wireframes](#wireframes)
 -   [Features](#features)
     -   [General Features](#general-features)
         -   [Navigation and Hero Section](#navigation-and-hero-section)
+        -   [Further information page](#further-information-page)
         -   [Bootstrap Cards](#bootstrap-cards)
+        -   [Jumbotron](#jumbotron)
+        -   [Modal Form](#modal-form)
+        -   [Success page](#success-page)
         -   [Footer](#footer)
         -   [Links and Buttons](#links-and-buttons)
     -   [Responsive Design](#responsive-design)
@@ -38,12 +42,12 @@ I opted to do the prevent strategy website as I thought it would be more of a ch
     -   [Libraries and Frameworks](#libraries-and-frameworks)
     -   [Tools & Programs](#tools-and-programs)
 -   [Development](#deployment)
--   [Testing](#testing)
--   [Credits](#credits)
-    -   [Code](#code)
+
+    -   [Testing & Validation](#testing--validation)
+    -   [AI](#ai)
     -   [Content Research](#content-research)
-    -   [Media](#media)
-    -   [Acknowledgements](#acknowledgements)
+
+    -   [Summary](#summary)
 
 ## Project outline
 
@@ -164,6 +168,7 @@ Navigation bar is built using bootstraps inbuilt navbar system however it has be
 ### Further information page
 
 The further information page was designed to house alot of information without being overwhelming, although i didn't have enough time to refine the content there is still alot of information on that page. In order to make it easier to navigate this information is conveyed using an accordion element from Bootstrap which has been customised using CSS.
+gt
 
 <p align="center"><img src="documentation/images/further-info.png"></p>
 
@@ -180,7 +185,9 @@ Cards have custom CSS styles applied as well as a scale transformation animation
 ### Jumbotron
 
 A Jumbotron has been used as an overlay on the hero image, it clearly states what the website is for and has two CTA's. The jumbotron also has its own styles added to give it a shadow and and slightly darker background.
-<img src="documentation/images/jumbotron.png">
+
+<p align="center">
+<img src="documentation/images/jumbotron.png"></p>
 
 ### Modal form
 
