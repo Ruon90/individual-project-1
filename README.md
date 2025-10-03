@@ -145,7 +145,9 @@ Wireframes were created at the start of planning and while they have served as a
 <img src="documentation/images/wireframe-mob-page-2.png">
 </p>
 <p align="right"><a href="#prevent-strategy">Back To Top</a></p>
+
 #### Desktop wireframes:
+
 <p align="center">
 <img src="documentation/images/wireframe-web-1.png">
 <img src="documentation/images/wireframe-web-2.png">
