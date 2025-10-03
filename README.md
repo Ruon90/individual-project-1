@@ -59,7 +59,7 @@ Create an informative webpage that introduces the prevent strategy, content shou
 
 ## Project planning
 
-Github projects and repo issues were used to create tasks from user stories, projectboard available <a href="https://github.com/users/Ruon90/projects/8/views/1" target="_blank">here</a>.
+Github projects and repo issues were used to create tasks from user stories, projectboard available <a href="https://github.com/users/Ruon90/projects/8/views/1" target="_blank">here</a>. I then decided on fonts, colour palette and
 
 <p align="right"><a href="#prevent-strategy">Back To Top</a></p>
 
@@ -228,5 +228,20 @@ If you would like to view the full report please click <a href="https://www.webp
 ## AI
 
 ## Content research / references
+
+Content was created using the following sources:
+
+-   <a href="https://homeofficemedia.blog.gov.uk/2024/12/05/prevent-and-channel-factsheet-2024/" target="_blank">Prevent and Channel factsheet – 2024 – Home Office in the media</a>
+-   <a href="https://fullfact.org/law/what-prevent-strategy/" target="_blank">What is the Prevent strategy? – Full Fact</a>
+-   <a href="https://www.gov.uk/government/publications/prevent-strategy-2011" target="_blank">Prevent strategy 2011 - GOV.UK</a>
+-   <a href="https://assets.publishing.service.gov.uk/media/5a78966aed915d07d35b0dcc/prevent-strategy-review.pdf" target="_blank">Prevent review</a>
+-   <a href="https://www.counterterrorism.police.uk/what-we-do/counter-terrorism/prevent/" target="_blank">Prevent | Counter Terrorism Policing</a>
+-   <a href="https://news.sky.com/story/what-is-prevent-and-why-is-the-anti-terrorism-programme-controversial-13323541" target="_blank">What is Prevent - and why is the anti-terrorism programme controversial? | UK News | Sky News</a>
+-   <a href="https://democracy.hants.gov.uk/documents/s135906/2025-06-18%20EAP%20-%20Prevent%20presentation%20June%202025.pdf" target="_blank">PowerPoint Presentation</a>
+-   <a href="https://www.libertyhumanrights.org.uk/fundamental/prevent/#:~:text=The%20Prevent%20Strategy%20is%20the%20Government%E2%80%99s%20flagship%20counter-extremism,at%20risk%20of%20committing%20terrorist%20acts%20and%20intervene." target="_blank">Prevent - Liberty</a>
+-   <a href="https://www.bbc.co.uk/news/election-2017-40151991" target="_blank">Reality Check: What is the Prevent strategy? - BBC News</a>
+-   <a href="https://cpdonline.co.uk/knowledge-base/safeguarding/what-is-prevent/" target="_blank">What is Prevent? | Prevent duty & who is responsible</a>
+-   <a href="https://content.eastamb.nhs.uk/assets/What_is_Prevent_0529e8abe1.pdf" target="_blank">What_is_Prevent_0529e8abe1.pdf</a>
+-   <a href="https://www.gov.uk/government/publications/new-definition-of-extremism-2024/new-definition-of-extremism-2024" target="_blank">New definition of extremism (2024) - GOV.UK</a>
 
 ## Summary
