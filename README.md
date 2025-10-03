@@ -11,7 +11,7 @@ This is my first individual project while completing the Code Institute full sta
 
 This project tasked us with creating a website using HTML, CSS and Bootstrap in order to satisfy the given brief within the timeframe.
 
-I opted to do the prevent strategy website as I thought it would be more of a challenge, upon beginning research into the subject matter i realised most people referred to the Prevent program are teenagers, so I decided to make a website that would appeal to teenagers as well as having the information required for adults.
+I opted to do the prevent strategy website as I thought it would be more of a challenge, upon beginning research into the subject matter I realised most people referred to the Prevent program are teenagers, so I decided to make a website that would appeal to teenagers as well as having the information required for adults.
 
 <h2 align="center" id="TOC">Table of contents</h2>
 
@@ -73,27 +73,27 @@ Github projects and repo issues were used to create tasks from user stories, pro
 
 #### Must haves:
 
--   As a website owner I want my webpage to be informative and well organised and easy to digest. So that younger users can access the information easily but theres also more substantial information for parents / professionals.
+-   As a website owner I want my webpage to be informative and well organised and easy to digest. So that younger users can access the information easily but there’s also more substantial information for parents / professionals.
 
 -   As a website owner I want my site to be focussed on simplicity So that everything is easy to find and read.
 
 -   As a website user I want to be able to navigate the information easily So that I can find the relevant information quickly.
 
--   As a site user I can get a basic introduction to prevent strategy. So that i can understand what the strategy is and how it effects me.
+-   As a site user I can get a basic introduction to prevent strategy. So that I can understand what the strategy is and how it effects me.
 
 -   As a website user I can learn how to report concerns in relation to the prevent strategy. So that I know where to go to raise any concerns to the relevant bodies.
 
--   As a website user I want to be able recognise the signs of radicalisation So that I can report anything necessary.
+-   As a website user I want to be able recognise the signs of radicalization So that I can report anything necessary.
 
 #### Should haves:
 
 -   As a website user I can get access to more comprehensive information that not all users would necessarily need or want. So that I can get all the relevant information from the website.
 
--   As a website user I can submit my details via a form to be kept up to date with news regarding prevent strategy So that i can keep informed on latest updates.
+-   As a website user I can submit my details via a form to be kept up to date with news regarding prevent strategy So that I can keep informed on latest updates.
 
 #### Could haves:
 
--   As a website user I can download a printable PDF file with the information from the site as a leaflet So that i can give information out to others.
+-   As a website user I can download a printable PDF file with the information from the site as a leaflet So that I can give information out to others.
 
 <p align="right"><a href="#prevent-strategy">Back To Top</a></p>
 
@@ -135,7 +135,7 @@ On top of the images I have also implemented various hover effects and animation
 
 ### Wireframes
 
-Wireframes were created at the start of planning and while they have served as a guide the end product deviates alot from the wireframes as the design naturally progressed.
+Wireframes were created at the start of planning and while they have served as a guide the end product deviates a lot from the wireframes as the design naturally progressed.
 
 #### Mobile wireframes:
 
@@ -169,7 +169,7 @@ Navigation bar is built using bootstraps inbuilt navbar system however it has be
 
 ### Further information page
 
-The further information page was designed to house alot of information without being overwhelming, although i didn't have enough time to refine the content there is still alot of information on that page. In order to make it easier to navigate this information is conveyed using an accordion element from Bootstrap which has been customised using CSS.
+The further information page was designed to house a lot of information without being overwhelming, although I didn't have enough time to refine the content there is still a lot of information on that page. In order to make it easier to navigate this information is conveyed using an accordion element from Bootstrap which has been customised using CSS.
 gt
 
 <p align="center"><img src="documentation/images/further-info.png"></p>
